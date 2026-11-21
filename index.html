@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Happy Birthday Kiran Rai</title>
+  <meta name="description" content="A premium birthday celebration for Kiran Rai.">
+  <meta name="theme-color" content="#080808">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23080808'/%3E%3Ctext x='32' y='43' font-size='32' text-anchor='middle' fill='%23D4AF37' font-family='serif'%3EK%3C/text%3E%3C/svg%3E">
+
+  <!-- Google Fonts (free) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;900&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <!-- Font Awesome (free) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="is-loading">
+
+  <!-- Visual effect layers (decorative) -->
+  <canvas id="bgParticles" class="fx-layer fx-layer--bg" aria-hidden="true"></canvas>
+  <canvas id="confettiCanvas" class="fx-layer fx-layer--confetti" aria-hidden="true"></canvas>
+  <canvas id="fireworksCanvas" class="fx-layer fx-layer--fireworks" aria-hidden="true"></canvas>
+
+  <!-- ============ NAVIGATION ============ -->
+  <header class="nav" id="nav">
+    <a class="nav__brand" href="#home" aria-label="Back to top">K<span>.</span>R</a>
+    <nav class="nav__links" aria-label="Main">
+      <a href="#home" class="is-active">Home</a>
+      <a href="#message">Message</a>
+      <a href="#cake">Cake</a>
+      <a href="#gallery">Gallery</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="home">
+      <div class="hero__bg" aria-hidden="true"></div>
+      <div class="hero__light hero__light--a" aria-hidden="true"></div>
+      <div class="hero__light hero__light--b" aria-hidden="true"></div>
+
+      <!-- Floating decorative elements -->
+      <div class="decor" aria-hidden="true">
+        <i class="fa-solid fa-star decor__item" style="--x:6%;--y:18%;--s:16px;--d:0s"></i>
+        <i class="fa-solid fa-gem decor__item" style="--x:92%;--y:14%;--s:18px;--d:1.2s"></i>
+        <i class="fa-solid fa-heart decor__item" style="--x:12%;--y:72%;--s:20px;--d:2.4s"></i>
+        <i class="fa-solid fa-star decor__item" style="--x:88%;--y:78%;--s:14px;--d:.6s"></i>
+        <i class="fa-solid fa-gift decor__item" style="--x:48%;--y:8%;--s:16px;--d:1.8s"></i>
+        <i class="fa-solid fa-crown decor__item" style="--x:78%;--y:46%;--s:15px;--d:3s"></i>
+      </div>
+
+      <div class="container hero__grid">
+        <div class="hero__text">
+          <p class="eyebrow anim-in" style="--i:0">A Celebration for</p>
+          <h1 class="hero__title">
+            <span class="hero__happy anim-in" style="--i:1">HAPPY BIRTHDAY</span>
+            <span class="hero__name glow-text anim-in" style="--i:2">KIRAN RAI</span>
+          </h1>
+          <p class="hero__sub anim-in" style="--i:3">Celebrating another year of greatness, memories and endless possibilities.</p>
+          <div class="anim-in" style="--i:4">
+            <button class="btn-gold" id="celebrateBtn" type="button">
+              <i class="fa-solid fa-wand-magic-sparkles" aria-hidden="true"></i>
+              <span>Celebrate Now</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Portrait -->
+        <figure class="portrait anim-in" id="portrait" style="--i:2">
+          <div class="portrait__glow" aria-hidden="true"></div>
+          <div class="portrait__frame">
+            <img src="kiran.jpg" alt="Portrait of Kiran Rai" width="664" height="603" decoding="async" fetchpriority="high">
+            <div class="photo-fallback" aria-hidden="true"><span>KR</span></div>
+          </div>
+        </figure>
+      </div>
+
+      <a href="#message" class="scroll-hint" aria-label="Scroll to the message">
+        <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
+      </a>
+    </section>
+
+    <!-- ============ MESSAGE ============ -->
+    <section class="section" id="message">
+      <div class="container container--narrow">
+        <header class="section__head reveal">
+          <p class="eyebrow">From the heart</p>
+          <h2 class="section__title">A Birthday Message</h2>
+          <span class="divider" aria-hidden="true"></span>
+        </header>
+
+        <article class="glass message reveal">
+          <i class="fa-solid fa-quote-left message__quote" aria-hidden="true"></i>
+          <p class="message__greeting">Dear Kiran Rai,</p>
+          <p>Today is a special day because it celebrates someone truly special.</p>
+          <p>May your journey ahead be filled with happiness, success, good health, unforgettable adventures and countless beautiful memories.</p>
+          <p>Keep smiling, keep growing, and continue making every moment meaningful.</p>
+          <p class="message__closing">Wishing you an incredible birthday and an even more amazing year ahead!</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ CAKE ============ -->
+    <section class="section section--alt" id="cake">
+      <div class="container container--narrow text-center">
+        <header class="section__head reveal">
+          <p class="eyebrow">Close your eyes</p>
+          <h2 class="section__title">Make a Wish</h2>
+          <span class="divider" aria-hidden="true"></span>
+          <p class="section__lead">Think of something wonderful, then press the button and blow out the candles.</p>
+        </header>
+
+        <div class="cake-wrap reveal">
+          <svg id="cake" class="cake" viewBox="0 0 400 380" role="img" aria-label="A birthday cake with five glowing candles">
+            <defs>
+              <linearGradient id="gGold" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#F5E6B3"/><stop offset=".5" stop-color="#D4AF37"/><stop offset="1" stop-color="#9c7a1c"/>
+              </linearGradient>
+              <linearGradient id="gNavy" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0" stop-color="#22304d"/><stop offset="1" stop-color="#101827"/>
+              </linearGradient>
+              <linearGradient id="gCream" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0" stop-color="#FFF6D8"/><stop offset="1" stop-color="#E6D197"/>
+              </linearGradient>
+              <radialGradient id="gFlame" cx=".5" cy=".7" r=".6">
+                <stop offset="0" stop-color="#ffffff"/><stop offset=".4" stop-color="#FFE9A0"/><stop offset="1" stop-color="#D4AF37"/>
+              </radialGradient>
+              <radialGradient id="gGlow" cx=".5" cy=".5" r=".5">
+                <stop offset="0" stop-color="#FFD966" stop-opacity=".75"/><stop offset="1" stop-color="#FFD966" stop-opacity="0"/>
+              </radialGradient>
+            </defs>
+
+            <!-- Plate -->
+            <ellipse cx="200" cy="352" rx="182" ry="22" fill="url(#gGold)"/>
+            <ellipse cx="200" cy="347" rx="168" ry="16" fill="#0c1220"/>
+
+            <!-- Bottom tier -->
+            <rect x="55" y="255" width="290" height="92" rx="14" fill="url(#gNavy)" stroke="#D4AF37" stroke-width="1.5"/>
+            <path d="M55 300 H345" stroke="url(#gGold)" stroke-width="4"/>
+            <line x1="75" y1="322" x2="325" y2="322" stroke="#D4AF37" stroke-width="6" stroke-linecap="round" stroke-dasharray="0 20"/>
+            <rect x="55" y="255" width="290" height="20" rx="10" fill="url(#gCream)"/>
+            <line x1="68" y1="274" x2="332" y2="274" stroke="#FFF6D8" stroke-width="14" stroke-linecap="round" stroke-dasharray="0 24"/>
+
+            <!-- Middle tier -->
+            <rect x="95" y="185" width="210" height="75" rx="12" fill="url(#gCream)" stroke="#D4AF37" stroke-width="1.5"/>
+            <path d="M95 228 H305" stroke="url(#gGold)" stroke-width="4"/>
+            <line x1="112" y1="245" x2="288" y2="245" stroke="#D4AF37" stroke-width="6" stroke-linecap="round" stroke-dasharray="0 18"/>
+            <rect x="95" y="185" width="210" height="18" rx="9" fill="#ffffff"/>
+            <line x1="106" y1="202" x2="294" y2="202" stroke="#ffffff" stroke-width="12" stroke-linecap="round" stroke-dasharray="0 22"/>
+
+            <!-- Top tier -->
+            <rect x="135" y="125" width="130" height="65" rx="12" fill="url(#gNavy)" stroke="#D4AF37" stroke-width="1.5"/>
+            <path d="M135 165 H265" stroke="url(#gGold)" stroke-width="3"/>
+            <line x1="150" y1="178" x2="250" y2="178" stroke="#D4AF37" stroke-width="5" stroke-linecap="round" stroke-dasharray="0 16"/>
+            <rect x="135" y="125" width="130" height="16" rx="8" fill="url(#gCream)"/>
+            <line x1="145" y1="140" x2="255" y2="140" stroke="#FFF6D8" stroke-width="11" stroke-linecap="round" stroke-dasharray="0 20"/>
+
+            <!-- Candles + flames -->
+            <g class="candles">
+              <g class="candle" style="--i:0">
+                <rect x="151" y="85" width="8" height="40" rx="2" fill="#F5E6B3" stroke="#D4AF37"/>
+                <line x1="155" y1="85" x2="155" y2="79" stroke="#3a2d10" stroke-width="1.5"/>
+                <g transform="translate(155 78)"><g class="flame-wrap">
+                  <circle class="flame-glow" cy="-12" r="18" fill="url(#gGlow)"/>
+                  <path class="flame" d="M0 -26 C9 -15 8 -3 0 3 C-8 -3 -9 -15 0 -26Z" fill="url(#gFlame)"/>
+                </g><path class="smoke" d="M0 -6 C-7 -16 7 -22 0 -36"/></g>
+              </g>
+              <g class="candle" style="--i:1">
+                <rect x="174" y="85" width="8" height="40" rx="2" fill="#D4AF37" stroke="#F5E6B3"/>
+                <line x1="178" y1="85" x2="178" y2="79" stroke="#3a2d10" stroke-width="1.5"/>
+                <g transform="translate(178 78)"><g class="flame-wrap">
+                  <circle class="flame-glow" cy="-12" r="18" fill="url(#gGlow)"/>
+                  <path class="flame" d="M0 -26 C9 -15 8 -3 0 3 C-8 -3 -9 -15 0 -26Z" fill="url(#gFlame)"/>
+                </g><path class="smoke" d="M0 -6 C-7 -16 7 -22 0 -36"/></g>
+              </g>
+              <g class="candle" style="--i:2">
+                <rect x="196" y="85" width="8" height="40" rx="2" fill="#F5E6B3" stroke="#D4AF37"/>
+                <line x1="200" y1="85" x2="200" y2="79" stroke="#3a2d10" stroke-width="1.5"/>
+                <g transform="translate(200 78)"><g class="flame-wrap">
+                  <circle class="flame-glow" cy="-12" r="18" fill="url(#gGlow)"/>
+                  <path class="flame" d="M0 -26 C9 -15 8 -3 0 3 C-8 -3 -9 -15 0 -26Z" fill="url(#gFlame)"/>
+                </g><path class="smoke" d="M0 -6 C-7 -16 7 -22 0 -36"/></g>
+              </g>
+              <g class="candle" style="--i:3">
+                <rect x="218" y="85" width="8" height="40" rx="2" fill="#D4AF37" stroke="#F5E6B3"/>
+                <line x1="222" y1="85" x2="222" y2="79" stroke="#3a2d10" stroke-width="1.5"/>
+                <g transform="translate(222 78)"><g class="flame-wrap">
+                  <circle class="flame-glow" cy="-12" r="18" fill="url(#gGlow)"/>
+                  <path class="flame" d="M0 -26 C9 -15 8 -3 0 3 C-8 -3 -9 -15 0 -26Z" fill="url(#gFlame)"/>
+                </g><path class="smoke" d="M0 -6 C-7 -16 7 -22 0 -36"/></g>
+              </g>
+              <g class="candle" style="--i:4">
+                <rect x="241" y="85" width="8" height="40" rx="2" fill="#F5E6B3" stroke="#D4AF37"/>
+                <line x1="245" y1="85" x2="245" y2="79" stroke="#3a2d10" stroke-width="1.5"/>
+                <g transform="translate(245 78)"><g class="flame-wrap">
+                  <circle class="flame-glow" cy="-12" r="18" fill="url(#gGlow)"/>
+                  <path class="flame" d="M0 -26 C9 -15 8 -3 0 3 C-8 -3 -9 -15 0 -26Z" fill="url(#gFlame)"/>
+                </g><path class="smoke" d="M0 -6 C-7 -16 7 -22 0 -36"/></g>
+              </g>
+            </g>
+          </svg>
+        </div>
+
+        <div class="cake-actions reveal">
+          <button class="btn-gold" id="wishBtn" type="button">
+            <i class="fa-solid fa-cake-candles" aria-hidden="true"></i>
+            <span>Make a Wish</span>
+          </button>
+          <button class="btn-ghost" id="relightBtn" type="button" hidden>
+            <i class="fa-solid fa-fire-flame-curved" aria-hidden="true"></i>
+            <span>Relight the candles</span>
+          </button>
+        </div>
+
+        <!-- Revealed after the candles go out -->
+        <div class="wish glass" id="wishReveal" aria-live="polite" hidden>
+          <i class="fa-solid fa-star wish__star" aria-hidden="true"></i>
+          <h3 class="wish__title">Your wish is on its way to the stars</h3>
+          <p>May every wish you made today come true, Kiran. Here's to a year as extraordinary as you are.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ GALLERY ============ -->
+    <section class="section" id="gallery">
+      <div class="container">
+        <header class="section__head reveal text-center">
+          <p class="eyebrow">Captured moments</p>
+          <h2 class="section__title">Gallery</h2>
+          <span class="divider" aria-hidden="true"></span>
+        </header>
+
+        <div class="gallery">
+          <figure class="tile tile--main reveal" tabindex="0" role="button" data-lightbox aria-label="Open the full portrait">
+            <img src="kiran-gallery-chair.png" alt="Kiran seated indoors" loading="lazy" decoding="async">
+            <figcaption>A quiet moment</figcaption>
+          </figure>
+          <figure class="tile tile--smile reveal" tabindex="0" role="button" data-lightbox aria-label="Open the full portrait">
+            <img src="kiran-gallery-outdoors.png" alt="Kiran outdoors with a friend" loading="lazy" decoding="async">
+            <figcaption>A day outdoors</figcaption>
+          </figure>
+          <figure class="tile tile--scene reveal" tabindex="0" role="button" data-lightbox aria-label="Open the full portrait">
+            <img src="kiran-gallery-birthday.png" alt="Kiran celebrating his birthday" loading="lazy" decoding="async">
+            <figcaption>Birthday celebration</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container text-center">
+      <span class="divider" aria-hidden="true"></span>
+      <p class="footer__love">Made with love for Kiran Rai.</p>
+      <p class="footer__tag">Happy Birthday &mdash; Make Every Moment Count.</p>
+    </div>
+  </footer>
+
+  <!-- ============ SURPRISE MODAL ============ -->
+  <div class="modal" id="surprise" role="dialog" aria-modal="true" aria-labelledby="surpriseTitle" hidden>
+    <div class="modal__backdrop" data-close></div>
+    <div class="modal__card glass">
+      <button class="modal__close" type="button" data-close aria-label="Close surprise">
+        <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+      </button>
+      <i class="fa-solid fa-gift modal__icon" aria-hidden="true"></i>
+      <h2 class="modal__title glow-text" id="surpriseTitle">Surprise!</h2>
+      <p class="modal__text" id="surpriseText" data-text="Kiran Rai, today the whole sky lights up for you. May this year bring you everything you have been dreaming of, and a few wonderful things you never expected."></p>
+      <button class="btn-gold btn-gold--sm" type="button" data-close data-scroll="#message">
+        <span>Read your message</span>
+        <i class="fa-solid fa-arrow-down" aria-hidden="true"></i>
+      </button>
+    </div>
+  </div>
+
+  <!-- ============ LIGHTBOX ============ -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Full portrait" hidden>
+    <button class="modal__close" type="button" data-close aria-label="Close photo">
+      <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+    </button>
+    <img src="images/kiran.jpg" alt="Kiran Rai, full portrait">
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
